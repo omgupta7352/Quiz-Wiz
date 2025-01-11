@@ -62,23 +62,16 @@ To run this project locally, follow these steps:
 
 ## API Endpoints
 
-### Authentication and Authorization
-- `POST /api/auth/signup`: Register a new user.
-- `POST /api/auth/signin`: Log in a user and generate a JWT token.
-
-### Quiz Management (Admin)
-- `POST /api/quizzes`: Create a new quiz.
-- `GET /api/quizzes`: Retrieve a list of all quizzes.
-- `GET /api/quizzes/{id}`: Get details of a specific quiz.
-- `PUT /api/quizzes/{id}`: Update an existing quiz.
-- `DELETE /api/quizzes/{id}`: Delete a quiz.
-
+### Home Page
+- `GET /api/`: Home page.
+- `POST /api/{id}`: Enter into the Quiz.
+  
 ### Quiz Participation
-- `GET /api/quizzes/take/{id}`: Retrieve quiz questions for a user to take.
-- `POST /api/quizzes/submit`: Submit quiz answers and calculate score.
+- `GET /api/quiz/{id}`: Retrieve quiz questions for a user to take.
+- `POST /api/quiz/submit`: Submit quiz answers and calculate score.
 
 ### User Management
-- `GET /api/users/{id}/scores`: Retrieve user's quiz scores.
+- `GET /api/users/scores`: Retrieve user's quiz scores.
 
 ## Contributing
 
