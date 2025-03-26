@@ -10,6 +10,7 @@ The **QuizWiz** is a simple and interactive platform that allows users to take q
 
 - [Features](#features)
 - [Demo](#demo)
+- [Diagram](#diagram)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [API Endpoints](#api-endpoints)
@@ -22,6 +23,34 @@ The **QuizWiz** is a simple and interactive platform that allows users to take q
 - **Score Calculation**: Automatic scoring and feedback after quiz completion.
 - **Score Card**: List of scores of all users.
 - **Responsive Design**: Mobile-friendly interface for seamless experience on all devices.
+
+## Diagram
+
+```
+
++-----------------+              +-------------+
+|     Result      |1           * |  Question   |
++-----------------+ <----------> +-------------+
+| - id: Integer   |              | - quesId: Integer  |
+| - username: String |           | - title: String    |
+| - totalCorrect: Integer|       | - optionA: String  |
++-----------------+              | - optionB: String  |
+                                  | - optionC: String  |
+                                  | - ans: Integer     |
+                                  | - chose: Integer   |
+                                  +-------------+
+
+
+
+
++-----------------------+
+|    QuestionForm       |
++-----------------------+
+| - questions: List<Question> |
++-----------------------+
+
+
+```
 
 ## Technologies Used
 - **Backend**: Spring Boot, Spring Security
