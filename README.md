@@ -24,6 +24,11 @@ The **QuizWiz** is a simple and interactive platform that allows users to take q
 - **Score Card**: List of scores of all users.
 - **Responsive Design**: Mobile-friendly interface for seamless experience on all devices.
 
+
+## Demo
+
+You can try out the BlogSphere live [here](https://quiz-wiz.onrender.com/).
+
 ## Diagram
 
 ```
